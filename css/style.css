@@ -9846,11 +9846,6 @@ h6,
   background-size: cover;
 }
 
-.under-construction {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/under-construction.jpg), no-repeat center center;
-  background-size: cover;
-}
-
 .cat-item img {
   transition: .5s;
 }
