@@ -25,6 +25,25 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
+<!-- jQuery (already included in most templates) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- jQuery Easing: provides easeInOutExpo curve -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+<script>
+  $(function () {
+    $('.lab-banner-btn').on('click', function (e) {
+      e.preventDefault(); // prevent default anchor jump
+      $('html, body').animate(
+        { scrollTop: $('#about').offset().top - 70 }, // adjust -70 px for fixed navbar height
+        1500,                                         // duration: 1.5 s
+        'easeInOutExpo'                               // same easing curve as back-to-top button
+      );
+    });
+  });
+</script>
+
+
 <body>
 <!-- =========   Sticky Header   ========= -->
 <header id="main-header" class="sticky-top bg-white">
@@ -74,7 +93,7 @@
             /* --clr-accent: #FF8C42; */
             /* --clr-accent: #18D58F; */
 
-            --clr-shadow: rgba(0,0,0,.35);/ 
+            --clr-shadow: rgba(0,0,0,.35);
         }
 
         .lab-banner{
@@ -97,10 +116,34 @@
 
         /* Oscar Letter */
         .OSCAR-colar{ color:var(--clr-accent); }
+        .mission-heading{
+            font-weight:700;           /* bold */
+            text-decoration:underline; /* underscore */
+            font-size:2.0rem;
+        }
+
+        .lab-banner-tagline{
+            color:rgba(255,255,255,.85);
+            font-size:1.5rem;
+            margin-top:4.0rem;
+            margin-left:1.5rem;   /* Keep the same left margin as the title */
+            max-width:750px;      /* Prevent overly long lines */
+        }
+
+        .lab-banner-btn{
+            margin-left:1.5rem;
+            transition:transform .3s ease;
+        }
+
+        /* .lab-banner-btn:hover{
+            transform:translateY(3px);
+        } */
+
 
         @media (min-width:768px){  .lab-banner-title{font-size:4rem;} }
         @media (min-width:1200px){ .lab-banner-title{font-size:5rem;} }
     </style>
+
 
     <section class="lab-banner">
         <!-- container-fluid + px-0 = full-width container with 0 left- and right-hand padding -->
@@ -108,18 +151,30 @@
             <h1 class="lab-banner-title">
             NYCU<br>
             <span class="OSCAR-colar">O</span>perating
-            <span class="OSCAR-colar">S</span>ystem &
+            <span class="OSCAR-colar">S</span>ystem & 
             <span class="OSCAR-colar">C</span>omputer
             <span class="OSCAR-colar">AR</span>chitecture<br>
             <span class="OSCAR-colar">OSCAR</span> Laboratory
             </h1>
+
+            <!-- ✧ Add Slogan ✧ -->
+            <p class="lab-banner-tagline">
+                <span class="mission-heading">Our Mission</span><br>
+                We strive to script breakthroughs in system research — just as the Oscars honor masterpieces in the movie industry
+            </p>
+
+            <!-- ✧ Learn More Scroll Button ✧ -->
+            <a href="#about"
+                class="btn btn-outline-light btn-lg mt-3 lab-banner-btn">
+                Learn&nbsp;More&nbsp;<i class="fa fa-angle-double-down ml-1"></i>
+            </a>
         </div>
     </section>
     <!-- Header End -->
 
 
     <!-- About Start -->
-    <div class="container-fluid py-5">
+    <div id="about" class="container-fluid py-5">
         <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-lg-5">
