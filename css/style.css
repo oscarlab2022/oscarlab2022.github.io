@@ -10025,3 +10025,66 @@ h6,
 
 @media (min-width:768px){  .lab-banner-title{font-size:4rem;} }
 @media (min-width:1200px){ .lab-banner-title{font-size:5rem;} }
+
+/* ==== Widen main container on large screens ==== */
+@media (min-width: 1200px){
+    .container{
+        max-width: 1300px;
+    }
+}
+
+
+
+/* —— Map Container —— */
+.map-container {
+  max-width: 920px;      /* Prevent stretching too wide on large screens */
+  margin: 0 auto;        /* Center horizontally */
+  border-radius: 8px;
+  overflow: hidden;
+  /* box-shadow: 0 0 18px rgba(0, 0, 0, .45); */
+}
+@media (max-width: 576px) {
+  .map-container { height: 300px; }  /* Lower the height on mobile devices */
+}
+
+
+/* ===== Contact Forat ===== */
+.contact-heading {
+  color: #FFB000;       
+  font-weight: 700;
+  font-size: 2.5rem;
+  letter-spacing: 0.05em;
+}
+
+/* —— Contact info text styling —— */
+.contact-info {
+  color: #bf4d00;    
+  font-size: 1.125rem;   
+  line-height: 1.8;     
+}
+
+
+/* ===== Contact Main Background Image ===== */
+.contact-section {
+  position: relative;                       /* Ensure proper background positioning */
+  background: url("../img/world.png")       /* Adjust the path according to actual file location */
+              no-repeat center center;      /* Center the image and prevent repeating */
+  background-size: cover;                   /* Fill the entire area and crop proportionally */
+  padding-top: 5rem;                        /* Adjust vertical padding if needed */
+  padding-bottom: 5rem;
+  color: #fff;                              /* Ensure text is readable over the background */
+}
+
+/* To improve readability with a translucent overlay, add this block */
+.contact-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;                                 /* Equivalent to top:0; right:0; bottom:0; left:0; */
+  background: rgba(0,0,0,0.5);              /* 50% black overlay */
+  z-index: 0;
+}
+/* Raise the internal container above the overlay */
+.contact-section > .container-xxl {
+  position: relative;
+  z-index: 1;
+}
