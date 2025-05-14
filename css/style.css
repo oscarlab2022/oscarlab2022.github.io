@@ -10193,6 +10193,7 @@ h6,
 .alumni-tags {
     margin-top: .6rem;
     display: flex;
+    flex-wrap: wrap;
     gap: .65rem;
 }
 
@@ -10209,6 +10210,7 @@ h6,
     border-radius: .6rem;
     text-decoration: none;
     transition: background .15s;
+    margin-bottom: .3rem;
 }
 .alumni-chip:hover {
     background: #e5deff;
