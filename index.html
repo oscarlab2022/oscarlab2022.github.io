@@ -64,13 +64,57 @@
 <!-- ========= End Sticky Header ========= -->
 
     <!-- Header Start -->
-    <div class="container-fluid page-header">
-        <div class="container">
-            <div class="d-flex flex-column justify-content-center" style="min-height: 300px">
-                <h3 class="display-4 text-white text-uppercase">NYCU Operating System and Computer Architecture Lab</h3>
-            </div>
+    <style>
+        :root{
+            /* ----- A： ----- */
+            --clr-main:   #ffffff;
+            /* --clr-main:   #FDFDFD; */
+
+            --clr-accent: #FFB000;
+            /* --clr-accent: #FF8C42; */
+            /* --clr-accent: #18D58F; */
+
+            --clr-shadow: rgba(0,0,0,.35);/ 
+        }
+
+        .lab-banner{
+            background:url("img/banner.png") center/cover no-repeat;
+            height:90vh;
+            display:flex;
+            align-items:flex-start;
+            padding-top:5rem;
+        }
+
+        .lab-banner-title{
+            color:var(--clr-main);
+            font-size:2.5rem;
+            line-height:1.2;
+            margin:0;
+            font-weight:700;      
+            padding-left:1.5rem;
+            text-shadow:0 0 6px var(--clr-shadow);
+        }
+
+        /* Oscar Letter */
+        .OSCAR-colar{ color:var(--clr-accent); }
+
+        @media (min-width:768px){  .lab-banner-title{font-size:4rem;} }
+        @media (min-width:1200px){ .lab-banner-title{font-size:5rem;} }
+    </style>
+
+    <section class="lab-banner">
+        <!-- container-fluid + px-0 = full-width container with 0 left- and right-hand padding -->
+        <div class="container-fluid px-0">
+            <h1 class="lab-banner-title">
+            NYCU<br>
+            <span class="OSCAR-colar">O</span>perating
+            <span class="OSCAR-colar">S</span>ystem &
+            <span class="OSCAR-colar">C</span>omputer
+            <span class="OSCAR-colar">AR</span>chitecture<br>
+            <span class="OSCAR-colar">OSCAR</span> Laboratory
+            </h1>
         </div>
-    </div>
+    </section>
     <!-- Header End -->
 
 
