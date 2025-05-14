@@ -10029,7 +10029,7 @@ h6,
 /* ==== Widen main container on large screens ==== */
 @media (min-width: 1200px){
     .container{
-        max-width: 1300px;
+        max-width: 1350px;
     }
 }
 
@@ -10087,4 +10087,149 @@ h6,
 .contact-section > .container-xxl {
   position: relative;
   z-index: 1;
+}
+
+/* ==== Alumni Section ==== */
+.alumni-section {
+    margin-bottom: 3rem;
+}
+
+.alumni-list {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.alumni-entry {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 2.5rem;
+    gap: 2.5rem;
+}
+
+.alumni-thumb {
+    width: 200px;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.alumni-thumb img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid #eee;
+    background: #fafaff;
+    margin-bottom: 14px;
+}
+
+.alumni-thumb h5 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.12rem;
+    line-height: 1.35;
+    color: #34345c;
+    word-break: break-all;
+}
+
+.alumni-name {
+    border-bottom: 2.5px solid #ccd6f6;
+    padding-bottom: 1px;
+    display: flex;
+    align-items: center;
+    gap: 18px; /* Spacing between Chinese and English names */
+    border-bottom: 2.5px solid #ccd6f6;
+    padding-bottom: 1px;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #223093;
+    margin-bottom: 0.3em;
+    letter-spacing: 0.02em;
+}
+
+.alumni-en {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #223093;
+}
+
+.alumni-duration {
+    margin-left: auto;
+    color: #4a90e2;            /* Light blue */
+    font-size: 1.07rem;        /* Smaller than the main name (originally 1.5rem) */
+    font-weight: 500;          /* No need for 700; keeps it less prominent */
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+    white-space: nowrap;
+    letter-spacing: 0.01em;
+    opacity: 0.85;             /* Slightly faded appearance */
+}
+
+
+
+.alumni-thumb small {
+    display: block;
+    color: #8989b0;
+    font-size: 0.99rem;
+    margin-top: 2px;
+    font-weight: 400;
+    word-break: break-all;
+}
+
+.alumni-text {
+    flex: 1 1 0;
+    max-width: 1350px;
+    text-align: left;
+    color: #232339;
+    font-size: 1.04rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.alumni-tags {
+    margin-top: .6rem;
+    display: flex;
+    gap: .65rem;
+}
+
+/* Purple (default, used for thesis/chip) */
+.alumni-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: .35rem;
+    padding: .3rem .7rem;
+    background: #f2efff;
+    color: #6b59ff;
+    font-size: .88rem;
+    font-weight: 600;
+    border-radius: .6rem;
+    text-decoration: none;
+    transition: background .15s;
+}
+.alumni-chip:hover {
+    background: #e5deff;
+    text-decoration: none;
+}
+.alumni-chip i {
+    font-size: .97rem;
+}
+
+/* Green chip (for social/media links or website) */
+.alumni-chip.green {
+    background: #e5fbe2;
+    color: #21a366;
+}
+.alumni-chip.green:hover {
+    background: #cdf5cb;
+}
+
+@media (max-width: 991px) {
+    .alumni-list { padding-left: 16px; padding-right: 16px; }
+    .alumni-entry { flex-direction: column; align-items: center; gap: 1.5rem; }
+    .alumni-thumb { width: 100%; }
+    .alumni-text { max-width: 100%; }
 }
