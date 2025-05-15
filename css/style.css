@@ -10577,15 +10577,35 @@ h6,
         width: 100%;
         max-width: 98vw;
         min-width: 0;
+        flex-direction: column;
+        align-items: center; 
+        padding: 1.3rem 0.5rem 1.3rem 0.5rem;
+    }
+    .team-thumb {
+        margin-right: 0;             
+        margin-bottom: 1.1rem;     
+    }
+    .team-text {
+        align-items: center;         
+        text-align: center;       
+        width: 100%;
     }
     .team-name {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 0.1em;
     }
     .team-info-list {
         font-size: 0.98rem;
         margin-bottom: 0.15em;
-        word-break: break-all; 
+        word-break: break-world;     
+    }
+}
+
+@media (max-width: 600px) {
+    .team-text .team-info-list {
+        text-align: left;
+        align-self: flex-start;
+        width: 100%;
     }
 }
