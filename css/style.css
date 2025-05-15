@@ -10288,13 +10288,13 @@ h6,
 }
 
 .ug-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 2.5rem 2rem;
-    max-width: 1450px;
+    max-width: 1350px;
     margin: 0 auto;
     padding: 0;
+    justify-items: center; 
 }
 
 .ug-entry {
@@ -10305,9 +10305,8 @@ h6,
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2.1rem 1rem 1.4rem 1rem;
-    min-width: 210px;
-    max-width: 350px;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    max-width: 600px;
     text-align: center;
     transition: box-shadow 0.14s;
 }
@@ -10321,8 +10320,8 @@ h6,
 }
 
 .ug-thumb img {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     object-fit: cover;
     border-radius: 12px;    /* Same as alumni */
     border: 3px solid #eee;
@@ -10358,18 +10357,16 @@ h6,
     color: #4a90e2;
     font-size: 1.0rem;
     font-weight: 600;
-    margin-top: 0.0em;
+    margin-top: 0.2em;
 }
 
 /* --- Responsive Design: 2 columns on tablet, 1 column on mobile --- */
 @media (max-width: 1300px) {
-    .ug-entry { flex-basis: calc(33.33% - 1.3rem); }
+    .ug-list { grid-template-columns: repeat(3, 1fr); }
 }
 @media (max-width: 900px) {
-    .ug-entry { flex-basis: calc(50% - 1.2rem); }
+    .ug-list { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 600px) {
-    .ug-list { gap: 1.3rem 0.5rem; }
-    .ug-entry { flex-basis: 100%; max-width: 95vw; }
-    .ug-thumb img { width: 120px; height: 120px; }
+    .ug-list { grid-template-columns: 1fr; gap: 1.3rem 0.5rem; }
 }
