@@ -26,42 +26,36 @@
 </head>
 
 <body>
-<!-- =========   Sticky Header   ========= -->
-<header id="main-header" class="sticky-top bg-white">
-    <div class="container-fluid py-3 px-xl-5
-                d-flex flex-lg-row flex-column
-                align-items-center justify-content-lg-between">
-
-        <!-- ===== LOGO ===== -->
-        <a href="index.html" class="text-decoration-none">
-            <h1 class="m-0"><span class="text-primary">OSCAR</span>LAB</h1>
-        </a>
-
-        <!-- ===== NAVBAR ===== -->
-        <nav class="navbar navbar-expand-lg navbar-light
-                    w-lg-auto w-100 mt-lg-0 mt-2 p-0">   <!-- 100% width on mobile, move down by 0.5 rem -->
-            <button class="navbar-toggler" type="button"
-                    data-toggle="collapse" data-target="#navbarCollapse">
+    <!-- =========   Sticky Header   ========= -->
+    <header id="main-header" class="sticky-top bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top" style="box-shadow: none;">
+        <div class="container-fluid px-0">
+            <!-- LOGO -->
+            <a class="navbar-brand pr-3" href="index.html" style="font-size:2.8rem;letter-spacing:0.05em;">
+                <span style="font-weight:700;color:#ffb300;">OSCAR</span><span style="color:#444b67;font-weight:700;">LAB</span>
+                </a>
+            <!-- Hamburger Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div id="navbarCollapse"
-                 class="collapse navbar-collapse justify-content-lg-end">
-                <div class="navbar-nav py-0">
-                    <a href="index.html"  class="nav-item nav-link">About</a>
-                    <a href="awards.html"   class="nav-item nav-link">Awards</a>
-                    <a href="topics.html"   class="nav-item nav-link">Research Topics</a>
-                    <a href="publications.html"   class="nav-item nav-link">Publications</a>
-                    <a href="members.html"   class="nav-item nav-link">Team</a>
-                    <a href="alumi.html"   class="nav-item nav-link">Alumni</a>
-                    <a href="activity.html" class="nav-item nav-link">Activities</a>
-                    <a href="contact.html" class="nav-item nav-link active">Contact</a>
-                </div>
+            <!-- Navigation Menu -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav align-items-lg-center ml-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="awards.html" class="nav-link">Awards</a></li>
+                <li class="nav-item"><a href="topics.html" class="nav-link">Research Topics</a></li>
+                <li class="nav-item"><a href="publications.html" class="nav-link">Publications</a></li>
+                <li class="nav-item"><a href="members.html" class="nav-link">Team</a></li>
+                <li class="nav-item"><a href="alumi.html" class="nav-link">Alumni</a></li>
+                <li class="nav-item"><a href="activity.html" class="nav-link">Activities</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
             </div>
-        </nav>
-    </div>
-</header>
-<!-- ========= End Sticky Header ========= -->
+        </div>
+    </nav>
+    </header>
+    <!-- ========= End Sticky Header ========= -->
 
 
     <!-- Header Start -->
