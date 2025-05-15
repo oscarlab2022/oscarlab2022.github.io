@@ -10278,3 +10278,98 @@ h6,
 .navbar-nav .nav-link:hover {
     color: #ff8900 !important;
 }
+
+
+
+/* ==== Undergraduate Alumni Section ==== */
+.ug-section {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.ug-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2.5rem 2rem;
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.ug-entry {
+    flex: 0 1 calc(25% - 1.5rem);  /* 4 columns */
+    background: #fafaff;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(120,120,170,0.07);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.1rem 1rem 1.4rem 1rem;
+    min-width: 210px;
+    max-width: 350px;
+    text-align: center;
+    transition: box-shadow 0.14s;
+}
+
+.ug-entry:hover {
+    box-shadow: 0 4px 18px rgba(120,120,170,0.12);
+}
+
+.ug-thumb {
+    margin-bottom: 1rem;
+}
+
+.ug-thumb img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;    /* Same as alumni */
+    border: 3px solid #eee;
+    background: #fafaff;
+    margin-bottom: 0px;
+    transition: border 0.13s;
+}
+.ug-entry:hover .ug-thumb img {
+    border-color: #b3bcdf;
+}
+
+.ug-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #223093;
+    margin-bottom: 0.1em;
+    letter-spacing: 0.01em;
+}
+.ug-en {
+    font-size: 1.25rem;
+    color: #223093;
+    font-weight: 500;
+    margin-left: 3px;
+}
+.ug-info {
+    font-size: 1.0rem;
+    margin-top: 0.0em;
+    color: #444b67;
+    line-height: 1.6;
+}
+
+.ug-nextjob {
+    color: #4a90e2;
+    font-size: 1.0rem;
+    font-weight: 600;
+    margin-top: 0.0em;
+}
+
+/* --- Responsive Design: 2 columns on tablet, 1 column on mobile --- */
+@media (max-width: 1300px) {
+    .ug-entry { flex-basis: calc(33.33% - 1.3rem); }
+}
+@media (max-width: 900px) {
+    .ug-entry { flex-basis: calc(50% - 1.2rem); }
+}
+@media (max-width: 600px) {
+    .ug-list { gap: 1.3rem 0.5rem; }
+    .ug-entry { flex-basis: 100%; max-width: 95vw; }
+    .ug-thumb img { width: 120px; height: 120px; }
+}
