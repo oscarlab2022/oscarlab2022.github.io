@@ -10449,10 +10449,16 @@ h6,
     padding-bottom: 0 !important;
 }
 .team-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 2.0rem;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0;
+    justify-items: start;
+}
+@media (max-width: 900px) {
+    .team-list { grid-template-columns: 1fr; }
 }
 
 .team-entry {
@@ -10568,11 +10574,11 @@ h6,
 
 /* RWD */
 @media (max-width: 600px) {
-    .team-list {
+    /* .team-list {
         flex-direction: column;
         gap: 1.5rem;
         align-items: center;
-    }
+    } */
     .team-entry {
         width: 100%;
         max-width: 98vw;
