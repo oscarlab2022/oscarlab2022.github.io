@@ -9973,7 +9973,7 @@ h6,
 
 .lab-banner{
     background:url("../img/banner.png") center/cover no-repeat;
-    height:90vh;
+    height:100vh;
     display:flex;
     align-items:flex-start;
     padding-top:5rem;
