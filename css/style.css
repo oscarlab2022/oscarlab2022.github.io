@@ -9996,6 +9996,36 @@ h6,
 }
 
 
+/* Custom styles for Bootstrap Navbar Toggler */
+.navbar-toggler {
+    background: #111 !important;      /* Dark background */
+    border: none !important;          /* Remove white border */
+    border-radius: 8px;               /* Rounded corners */
+    padding: 0.5rem 1.3rem !important;
+    position: relative;
+}
+
+/* White text + hamburger icon lines */
+.navbar-toggler .navbar-toggler-icon,
+.navbar-toggler span {
+    background-image: none !important;
+}
+
+.navbar-toggler::after {
+    content: '\2630';      /* Unicode: ☰ */
+    color: #ffb300;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    font-size: 2.0rem;
+    display: block;
+    text-align: center;
+    line-height: 1.1;
+}
+
+/* Hide the default three-line icon (replaced with the symbol above) */
+.navbar-toggler-icon {
+    display: none !important;
+}
 
 :root{
     /* ----- A： ----- */
