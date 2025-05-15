@@ -10535,9 +10535,7 @@ h6,
     padding: 0;
     list-style: none;
 }
-.team-info-list li {
-    margin-bottom: 0.2em;
-}
+
 .team-tags {
     margin-top: 0.3rem;
     display: flex;
