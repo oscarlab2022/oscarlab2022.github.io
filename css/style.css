@@ -10466,7 +10466,7 @@ h6,
     background: #fafaff;
     border-radius: 24px;
     box-shadow: 0 4px 18px 0 rgba(60,80,170,0.08);
-    padding: 2.0rem 1.5rem 2.0rem 1.5rem;
+    padding: 2.0rem 1.5rem 2.0rem 1.0rem;
     margin-bottom: 0;
     display: flex;
     align-items: center;
@@ -10520,7 +10520,7 @@ h6,
     font-size: 1.25rem;
     font-weight: 700;
     color: #223093;
-    margin-left: 3px;
+    margin-left: 0px;
 }
 
 .team-text {
