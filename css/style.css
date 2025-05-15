@@ -10091,12 +10091,14 @@ h6,
 
 /* ==== Alumni Section ==== */
 .alumni-section {
-    margin-bottom: 3rem;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 .alumni-list {
     max-width: 1350px;
-    margin: 0 auto;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
     padding-left: 0px;
     padding-right: 0px;
 }
