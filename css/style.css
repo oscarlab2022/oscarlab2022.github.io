@@ -9966,7 +9966,7 @@ h6,
 .navbar {
     padding-top: 0.45rem !important;
     padding-bottom: 0.45rem !important;
-    background-color: #111 !important;   /* Full black background */
+    background-color: #000 !important;   /* Full black background */
 }
 
 .navbar-brand {
