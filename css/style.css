@@ -9960,6 +9960,34 @@ h6,
 
 /* Custom Style */
 
+/* OSCARLAB LOGO Style */
+.oscarlab-logo {
+    font-size: 2.8rem;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.oscar-text {
+    color: #fff;                 /* White text */
+    font-weight: 700;
+    font-family: 'Poppins', 'Arial', sans-serif;
+}
+
+.lab-block {
+    color: #000;                 /* Dark text */
+    background: #f7971d;         /* orange */
+    border-radius: 10px;         /* Rounded corners */
+    margin-left: 0.4rem;         /* Spacing from the previous element */
+    padding: 0.1em 0.3em 0.06em 0.3em;
+    font-weight: 700;
+    font-family: 'Poppins', 'Arial', sans-serif;
+    box-shadow: 0 1px 8px 0 rgba(0,0,0,0.08);
+    display: inline-block;
+    line-height: 1.2;
+}
+
 
 /* Sticky Header - Black Background and White Text */
 /* ===== Navar Bar Section ===== */
