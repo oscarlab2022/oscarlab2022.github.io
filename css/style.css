@@ -10439,3 +10439,147 @@ h6,
 @media (max-width: 600px) {
     .ug-list { grid-template-columns: 1fr; gap: 1.3rem 0.5rem; }
 }
+
+/* ==== Team Member Section ==== */
+.team-section {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.0rem;
+}
+
+.team-entry {
+    width: 640px;       /* Consistent width for each card */
+    background: #fafaff;
+    border-radius: 24px;
+    box-shadow: 0 4px 18px 0 rgba(60,80,170,0.08);
+    padding: 2.0rem 0rem 2.0rem 0rem;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    min-height: 230px;
+    transition: box-shadow 0.14s, border-color 0.14s;
+}
+
+.team-entry:hover {
+    box-shadow: 0 8px 28px 0 rgba(60,80,170,0.18);
+    /* add a glowing border */
+    /* border: 2.5px solid #b3bcdf; */
+}
+
+.team-thumb {
+    width: 220px;
+    min-width: 220px;
+    text-align: center;
+    margin-right: 1.6rem;
+}
+
+.team-thumb img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2.5px solid #eee;
+    background: #fafaff;
+    margin-bottom: 8px;
+}
+
+
+.team-entry:hover .team-thumb img {
+    border-color: #b3bcdf;
+    /* Highlight the profile picture as well (same as ug-entry) */
+}
+
+
+.team-name {
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #223093;
+    margin-bottom: 0.18em;
+    letter-spacing: 0.01em;
+}
+
+.team-en {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #223093;
+    margin-left: 3px;
+}
+
+.team-text {
+    flex: 1 1 0;
+    text-align: left;
+    color: #232339;
+    font-size: 1.00rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.team-duration {
+    color: #4a90e2;
+    font-size: 0.96rem;
+    font-weight: 600;
+    margin-bottom: 0.25em;
+    letter-spacing: 0.01em;
+}
+.team-info-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.team-info-list li {
+    margin-bottom: 0.2em;
+}
+.team-tags {
+    margin-top: 0.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+.team-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: .35rem;
+    padding: .24rem .68rem;
+    background: #e5fbe2;
+    color: #21a366;
+    font-size: .87rem;
+    font-weight: 600;
+    border-radius: .6rem;
+    text-decoration: none;
+    transition: background .15s;
+    margin-bottom: .18rem;
+}
+.team-chip:hover {
+    background: #cdf5cb;
+}
+.team-chip i {
+    font-size: .97rem;
+}
+
+/* RWD */
+@media (max-width: 600px) {
+    .team-list {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+    .team-entry {
+        width: 100%;
+        max-width: 98vw;
+        min-width: 0;
+    }
+    .team-name {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.1em;
+    }
+}
