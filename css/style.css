@@ -10440,6 +10440,9 @@ h6,
     .ug-list { grid-template-columns: 1fr; gap: 1.3rem 0.5rem; }
 }
 
+
+
+
 /* ==== Team Member Section ==== */
 .team-section {
     margin-bottom: 0 !important;
@@ -10579,5 +10582,10 @@ h6,
         flex-direction: column;
         align-items: flex-start;
         gap: 0.1em;
+    }
+    .team-info-list {
+        font-size: 0.98rem;
+        margin-bottom: 0.15em;
+        word-break: break-all; 
     }
 }
