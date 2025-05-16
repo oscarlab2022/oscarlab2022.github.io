@@ -9976,8 +9976,10 @@ h6,
 }
 
 .lab-block {
-    color: #000;                 /* Dark text */
-    background: #f7971d;         /* orange */
+    /*color: #000;                 /* Dark text */
+    color: #fff;
+    /*background: #f7971d;         /* orange */
+    background: #e62629;
     border-radius: 10px;         /* Rounded corners */
     margin-left: 0.4rem;         /* Spacing from the previous element */
     padding: 0.1em 0.3em 0.06em 0.3em;
