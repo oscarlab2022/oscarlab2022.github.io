@@ -10759,3 +10759,181 @@ h6,
         display: block;
     }
 }
+
+
+
+
+/* ==== Award Section ==== */
+.oscar-awards-fancy {
+    display: flex;
+    flex-direction: column;
+    gap: 2.0rem;
+    max-width: 1350px;
+    margin: 3.0rem auto 5.0rem auto;
+}
+
+.oscar-award-card {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(105deg, #fffbe8 70%, #f7eec2 100%);
+    border-radius: 2rem;
+    box-shadow: 0 6px 24px 0 rgba(200,160,60,0.13), 0 1.5px 0 #e3b7002c;
+    border: 2px solid transparent;
+    background-clip: padding-box, border-box;
+    position: relative;
+    min-height: 110px;
+    transition: box-shadow 0.18s, transform 0.12s;
+    padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.oscar-award-card::before {
+    /* Golden glow border gradient */
+    content: "";
+    position: absolute;
+    inset: -2px;
+    z-index: 0;
+    border-radius: 2rem;
+    background: linear-gradient(105deg, #f9e37e 25%, #edbe41 80%, #ffeec6 100%);
+    opacity: 0.5;
+    filter: blur(6px);
+    pointer-events: none;
+}
+
+.oscar-award-card:hover {
+    box-shadow: 0 10px 36px 0 rgba(255,200,60,0.19), 0 2.5px 0 #e3b7002c;
+    transform: translateY(-2px) scale(1.01);
+}
+
+.award-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2.0rem;
+    z-index: 2;
+    position: relative;
+}
+
+.badge-medal {
+  font-size: 2.5rem;
+  filter: drop-shadow(0 3px 6px #e0b70085);
+  animation: bounce-medal 1.8s infinite cubic-bezier(.45,1.48,.6,.99);
+}
+
+@keyframes bounce-medal {
+  0%, 100% { transform: translateY(0);}
+  40% { transform: translateY(-6px);}
+  55% { transform: translateY(2px);}
+  70% { transform: translateY(-2px);}
+}
+
+.badge-ribbon {
+  display: block;
+  width: 30px;
+  height: 15px;
+  margin-top: -8px;
+  background: linear-gradient(90deg, #e0bb37 60%, #ffe078 100%);
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 1.5px 6px #efd77f6c;
+}
+
+.award-meta {
+  margin-right: 2.0rem;
+  text-align: center;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 60px;
+}
+
+
+.award-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fffbe8;
+  border-radius: 1.2em;
+  border: 2.5px solid #e5c862;
+  box-shadow: 0 1px 6px #edd48226;
+  padding: 0.5em 1.3em 0.5em 1.3em;
+  margin: 0.em 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 700;
+}
+
+.award-month {
+  color: #b1911a;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.1em;
+  text-transform: capitalize;
+  line-height: 1;
+}
+
+.award-year {
+  color: #a08a3c;
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+}
+
+
+.award-content {
+  z-index: 2;
+  flex: 1 1 0;
+}
+
+.award-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #9c7c17;
+  margin-bottom: 2px;
+  font-family: 'Poppins', Arial, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.award-highlight {
+  background: linear-gradient(90deg, #fbe664 50%, #ffd27e 100%);
+  color: #805400;
+  padding: 0.15em 0.5em;
+  border-radius: 0.8em;
+  font-weight: 800;
+  margin-left: 6px;
+  font-size: 1.2rem;
+}
+
+.award-desc {
+  color: #604d23;
+  padding: 0.15em 0.5em;
+  font-size: 1.2rem;
+  margin-top: 3px;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 650px) {
+  .oscar-award-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.2rem 1rem 1.2rem 1rem;
+    min-height: 95px;
+    gap: 0.5rem;
+  }
+  .award-badge, .award-meta {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+  .award-content {
+    width: 100%;
+  }
+  .award-title { font-size: 1.1rem;}
+}
