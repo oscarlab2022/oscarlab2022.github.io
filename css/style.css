@@ -10920,7 +10920,7 @@ h6,
     letter-spacing: 0.02em;
 }
 
-/* RWD - 獎牌與日期同排且置中 */
+/* For RWD */
 @media (max-width: 650px) {
     .oscar-award-card {
         flex-direction: column;
@@ -10942,5 +10942,14 @@ h6,
         justify-content: center;
         display: flex;
         flex-direction: column;
+    }
+
+    .oscar-awards-fancy {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .oscar-award-card {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
 }
