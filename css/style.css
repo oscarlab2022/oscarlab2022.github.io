@@ -10523,6 +10523,7 @@ h6,
     font-weight: 700;
     color: #223093;
     margin-left: 0px;
+    letter-spacing: 0.01em;
 }
 
 .team-text {
@@ -10536,7 +10537,7 @@ h6,
 }
 .team-duration {
     color: #4a90e2;
-    font-size: 0.96rem;
+    font-size: 1.0rem;
     font-weight: 600;
     margin-bottom: 0.25em;
     letter-spacing: 0.01em;
@@ -10623,78 +10624,104 @@ h6,
 
 /* ==== Team Director Section ==== */
 .director-section {
-    margin-bottom: 2.5rem;
-    margin-top: 2.2rem;
-    padding: 0 0 1.7rem 0;
+    margin-bottom: 0.0rem;
+    margin-top: 0.0rem;
+    padding: 0 0 1.5rem 0;
 }
+
 .director-entry {
     display: flex;
     align-items: center;
-    gap: 3.2rem;
+    gap: 3.0rem;
     background: #f7f8fc;
     border-radius: 32px;
-    box-shadow: 0 8px 32px 0 rgba(60,80,170,0.09);
-    padding: 3.1rem 2.2rem;
-    max-width: 1200px;
+    box-shadow: 0 8px 32px 0 rgba(60,80,170,0.1);
+    padding: 2.0rem 2.0rem 2.5rem 2.0rem; 
+    max-width: 1300px;
     margin: 0 auto;
+    transition: box-shadow 0.14s, border-color 0.14s;
 }
+
+.director-entry:not(:last-child) {
+    margin-bottom: 2.5rem;
+}
+
 .director-thumb {
     min-width: 270px;
     text-align: center;
 }
+
 .director-thumb img {
-    width: 270px;
-    height: 270px;
+    width: 350px;
+    height: 350px;
     object-fit: cover;
     border-radius: 20px;
-    border: 5px solid #b3bcdf;
+    border: 5px solid #eee;
     background: #fff;
     box-shadow: 0 2px 16px 0 rgba(120,120,170,0.13);
+    transition: border-color 0.14s, box-shadow 0.14s;
 }
+
+.director-entry:hover .director-thumb img {
+    border-color: #b3bcdf;
+}
+
+.director-entry:hover {
+    box-shadow: 0 8px 28px 0 rgba(60,80,170,0.18);
+}
+
 .director-info {
     flex: 1 1 0;
     min-width: 270px;
     color: #242447;
 }
+
 .director-name {
-    font-size: 2.15rem;
+    display: flex;
+    align-items: center;
+    font-size: 2.25rem;
     font-weight: 800;
     color: #223093;
-    letter-spacing: .03em;
-    display: flex;
     gap: 20px;
-    align-items: center;
-    margin-bottom: 0.18em;
+    margin-bottom: 0.0em;
+    letter-spacing: 0.01em;
 }
+
 .director-en {
-    font-size: 2.15rem;
-    font-weight: 700;
+    font-size: 2.25rem;
+    font-weight: 800;
     color: #223093;
-    opacity: 0.82;
-    letter-spacing: .01em;
+    margin-left: 0px;
+    /* opacity: 0.82; */
+    letter-spacing: 0.01em;
 }
+
 .director-title {
-    font-size: 1.18rem;
+    font-size: 1.25rem;
     font-weight: 600;
     color: #30406a;
-    margin-bottom: 0.38em;
-    letter-spacing: 0.015em;
+    margin-bottom: 0.0em;
+    letter-spacing: 0.01em;
 }
 .director-degree {
-    font-size: 1.06rem;
+    font-size: 1.25rem;
+    font-weight: 600;
     color: #586185;
-    margin-bottom: 0.33em;
+    margin-bottom: 0.5em;
 }
+
 .director-research {
-    font-size: 1.09rem;
+    font-size: 1.25rem;
     color: #303151;
-    margin-bottom: 0.34em;
+    margin-bottom: 0.2em;
     line-height: 1.7;
 }
+
 .director-contact {
-    font-size: 1.08rem;
-    margin-bottom: 0.48em;
+    font-size: 1.25rem;
+    margin-bottom: 0.2em;
 }
+
 .director-contact span {
     color: #21a366;
     word-break: break-all;
