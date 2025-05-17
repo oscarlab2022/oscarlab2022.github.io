@@ -10739,8 +10739,15 @@ h6,
         min-width: 0;
         width: 100%;
     }
+    /* .director-info, */
+    .director-name,
+    .director-title,
+    .director-degree {
+        text-align: center;
+    }
     .director-name, .director-en {
         font-size: 1.6rem;
+        justify-content: center;
     }
     .director-thumb img {
         width: 180px;
