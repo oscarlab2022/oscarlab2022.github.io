@@ -10752,7 +10752,10 @@ h6,
         justify-content: center;
     }
     .director-thumb img {
-        width: 180px;
-        height: 180px;
+        width: 80vw;
+        max-width: 300px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
     }
 }
