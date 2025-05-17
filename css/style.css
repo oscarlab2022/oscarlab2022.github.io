@@ -10816,124 +10816,131 @@ h6,
 }
 
 .badge-medal {
-  font-size: 2.5rem;
-  filter: drop-shadow(0 3px 6px #e0b70085);
-  animation: bounce-medal 1.8s infinite cubic-bezier(.45,1.48,.6,.99);
+    font-size: 2.5rem;
+    filter: drop-shadow(0 3px 6px #e0b70085);
+    animation: bounce-medal 1.8s infinite cubic-bezier(.45,1.48,.6,.99);
 }
 
 @keyframes bounce-medal {
-  0%, 100% { transform: translateY(0);}
-  40% { transform: translateY(-6px);}
-  55% { transform: translateY(2px);}
-  70% { transform: translateY(-2px);}
+    0%, 100% { transform: translateY(0);}
+    40% { transform: translateY(-6px);}
+    55% { transform: translateY(2px);}
+    70% { transform: translateY(-2px);}
 }
 
 .badge-ribbon {
-  display: block;
-  width: 30px;
-  height: 15px;
-  margin-top: -8px;
-  background: linear-gradient(90deg, #e0bb37 60%, #ffe078 100%);
-  border-radius: 0 0 8px 8px;
-  box-shadow: 0 1.5px 6px #efd77f6c;
+    display: block;
+    width: 30px;
+    height: 15px;
+    margin-top: -8px;
+    background: linear-gradient(90deg, #e0bb37 60%, #ffe078 100%);
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 1.5px 6px #efd77f6c;
 }
 
 .award-meta {
-  margin-right: 2.0rem;
-  text-align: center;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 60px;
+    margin-right: 2.0rem;
+    text-align: center;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 60px;
 }
 
 
 .award-date {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #fffbe8;
-  border-radius: 1.2em;
-  border: 2.5px solid #e5c862;
-  box-shadow: 0 1px 6px #edd48226;
-  padding: 0.5em 1.3em 0.5em 1.3em;
-  margin: 0.em 0;
-  font-family: 'Poppins', Arial, sans-serif;
-  font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fffbe8;
+    border-radius: 1.2em;
+    border: 2.5px solid #e5c862;
+    box-shadow: 0 1px 6px #edd48226;
+    padding: 0.5em 1.3em 0.5em 1.3em;
+    margin: 0.em 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 700;
 }
 
 .award-month {
-  color: #b1911a;
-  font-size: 1.25rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  margin-bottom: 0.1em;
-  text-transform: capitalize;
-  line-height: 1;
+    color: #b1911a;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.1em;
+    text-transform: capitalize;
+    line-height: 1;
 }
 
 .award-year {
-  color: #a08a3c;
-  font-size: 1.25rem;
-  font-weight: 500;
-  letter-spacing: 0.01em;
-  line-height: 1.2;
+    color: #a08a3c;
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    line-height: 1.2;
 }
 
 
 .award-content {
-  z-index: 2;
-  flex: 1 1 0;
+    z-index: 2;
+    flex: 1 1 0;
 }
 
 .award-title {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: #9c7c17;
-  margin-bottom: 2px;
-  font-family: 'Poppins', Arial, sans-serif;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #9c7c17;
+    margin-bottom: 2px;
+    font-family: 'Poppins', Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
 }
 
 .award-highlight {
-  background: linear-gradient(90deg, #fbe664 50%, #ffd27e 100%);
-  color: #805400;
-  padding: 0.15em 0.5em;
-  border-radius: 0.8em;
-  font-weight: 800;
-  margin-left: 6px;
-  font-size: 1.2rem;
+    background: linear-gradient(90deg, #fbe664 50%, #ffd27e 100%);
+    color: #805400;
+    padding: 0.15em 0.5em;
+    border-radius: 0.8em;
+    font-weight: 800;
+    margin-left: 6px;
+    font-size: 1.2rem;
 }
 
 .award-desc {
-  color: #604d23;
-  padding: 0.15em 0.5em;
-  font-size: 1.2rem;
-  margin-top: 3px;
-  font-family: 'Poppins', Arial, sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.02em;
+    color: #604d23;
+    padding: 0.15em 0.5em;
+    font-size: 1.2rem;
+    margin-top: 3px;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.02em;
 }
 
+/* RWD - 獎牌與日期同排且置中 */
 @media (max-width: 650px) {
-  .oscar-award-card {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1.2rem 1rem 1.2rem 1rem;
-    min-height: 95px;
-    gap: 0.5rem;
-  }
-  .award-badge, .award-meta {
-    margin-right: 0;
-    margin-bottom: 5px;
-  }
-  .award-content {
-    width: 100%;
-  }
-  .award-title { font-size: 1.1rem;}
+    .oscar-award-card {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1.2rem 1rem 1.2rem 1rem;
+        min-height: 95px;
+        gap: 0.5rem;
+    }
+    .award-badge, .award-meta {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    .award-content {
+        width: 100%;
+    }
+    .award-title {
+        font-size: 1.25rem;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
 }
