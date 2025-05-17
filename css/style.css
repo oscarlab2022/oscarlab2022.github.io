@@ -10133,20 +10133,7 @@ h6,
 
 
 
-/* —— Map Container —— */
-.map-container {
-  max-width: 920px;      /* Prevent stretching too wide on large screens */
-  margin: 0 auto;        /* Center horizontally */
-  border-radius: 8px;
-  overflow: hidden;
-  /* box-shadow: 0 0 18px rgba(0, 0, 0, .45); */
-}
-@media (max-width: 576px) {
-  .map-container { height: 300px; }  /* Lower the height on mobile devices */
-}
-
-
-/* ===== Contact Forat ===== */
+/* ==== Contact Section ==== */
 .contact-heading {
   color: #FFB000;       
   font-weight: 700;
@@ -10186,6 +10173,21 @@ h6,
   position: relative;
   z-index: 1;
 }
+
+/* —— Map Container —— */
+.map-container {
+  max-width: 920px;      /* Prevent stretching too wide on large screens */
+  margin: 0 auto;        /* Center horizontally */
+  border-radius: 8px;
+  overflow: hidden;
+  /* box-shadow: 0 0 18px rgba(0, 0, 0, .45); */
+}
+@media (max-width: 576px) {
+  .map-container { height: 300px; }  /* Lower the height on mobile devices */
+}
+
+
+
 
 /* ==== Alumni Section ==== */
 .alumni-section {
