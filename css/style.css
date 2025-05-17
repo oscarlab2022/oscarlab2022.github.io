@@ -10617,3 +10617,106 @@ h6,
         width: 100%;
     }
 }
+
+
+
+
+/* ==== Team Director Section ==== */
+.director-section {
+    margin-bottom: 2.5rem;
+    margin-top: 2.2rem;
+    padding: 0 0 1.7rem 0;
+}
+.director-entry {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+    background: #f7f8fc;
+    border-radius: 32px;
+    box-shadow: 0 8px 32px 0 rgba(60,80,170,0.09);
+    padding: 3.1rem 2.2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.director-thumb {
+    min-width: 270px;
+    text-align: center;
+}
+.director-thumb img {
+    width: 270px;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 5px solid #b3bcdf;
+    background: #fff;
+    box-shadow: 0 2px 16px 0 rgba(120,120,170,0.13);
+}
+.director-info {
+    flex: 1 1 0;
+    min-width: 270px;
+    color: #242447;
+}
+.director-name {
+    font-size: 2.15rem;
+    font-weight: 800;
+    color: #223093;
+    letter-spacing: .03em;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 0.18em;
+}
+.director-en {
+    font-size: 2.15rem;
+    font-weight: 700;
+    color: #223093;
+    opacity: 0.82;
+    letter-spacing: .01em;
+}
+.director-title {
+    font-size: 1.18rem;
+    font-weight: 600;
+    color: #30406a;
+    margin-bottom: 0.38em;
+    letter-spacing: 0.015em;
+}
+.director-degree {
+    font-size: 1.06rem;
+    color: #586185;
+    margin-bottom: 0.33em;
+}
+.director-research {
+    font-size: 1.09rem;
+    color: #303151;
+    margin-bottom: 0.34em;
+    line-height: 1.7;
+}
+.director-contact {
+    font-size: 1.08rem;
+    margin-bottom: 0.48em;
+}
+.director-contact span {
+    color: #21a366;
+    word-break: break-all;
+}
+
+@media (max-width: 900px) {
+    .director-entry {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0.6rem;
+        gap: 1.8rem;
+    }
+    .director-thumb,
+    .director-info {
+        min-width: 0;
+        width: 100%;
+    }
+    .director-name, .director-en {
+        font-size: 1.6rem;
+    }
+    .director-thumb img {
+        width: 180px;
+        height: 180px;
+    }
+}
