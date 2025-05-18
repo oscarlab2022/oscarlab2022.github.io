@@ -11098,6 +11098,12 @@ h6,
     font-weight: 500;
 }
 
+.footer-designer {
+    color: #a9a9a9;
+    font-size: 1.0em;
+    font-style: italic;
+}
+
 .footer-links a {
     color: #e62629;
     text-decoration: none;
