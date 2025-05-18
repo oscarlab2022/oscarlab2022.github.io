@@ -11053,7 +11053,7 @@ h6,
 @media (max-width: 750px) {
     .activity-card, .oscar-activities {
         max-width: 98vw;
-        padding: 0 0.2em;
+        padding: 1.0rem 1.0rem 1.0rem 1.0rem; 
     }
     .activity-swiper {
         width: 95vw;
