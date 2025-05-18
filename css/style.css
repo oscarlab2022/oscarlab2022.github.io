@@ -11179,7 +11179,13 @@ h6,
     box-shadow: 0 6px 28px 0 rgba(230,38,41,0.08);
 }
 
-@media (max-width: 768px) {
+.oscar-about-btns {
+    display: flex;
+    gap: 1.2em;
+    margin-top: 1.8em;
+}
+
+@media (max-width: 600px) {
     .oscar-about-title { 
         font-size: 1.5rem; 
     }
@@ -11187,7 +11193,20 @@ h6,
         padding: 2.0rem 0 2.0rem 0; 
     }
     .oscar-lab-badge {
+        white-space: normal;
+        word-break: break-word;
         font-size: 1.0em;
-        padding: 3px 10px;
+        padding: 3px 8px;
+    }
+
+    .oscar-about-btns {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.7em;
+    }
+    .oscar-learn-btn, .oscar-join-btn {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
     }
 }
