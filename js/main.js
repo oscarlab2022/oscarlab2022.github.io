@@ -45,6 +45,20 @@
 })(jQuery);
 
 /* Custom js */
+
+/* About section*/
+$(function () {
+$('.lab-banner-btn').on('click', function (e) {
+    e.preventDefault(); // prevent default anchor jump
+    $('html, body').animate(
+    { scrollTop: $('#about').offset().top - 70 }, // adjust -70 px for fixed navbar height
+    1500,                                         // duration: 1.5 s
+    'easeInOutExpo'                               // same easing curve as back-to-top button
+    );
+});
+});
+
+
 /* Activity section*/
 document.querySelectorAll('.activity-swiper').forEach(function(el) {
 new Swiper(el, {
