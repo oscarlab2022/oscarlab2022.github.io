@@ -44,3 +44,24 @@
     
 })(jQuery);
 
+/* Custom js */
+/* Activity section*/
+document.querySelectorAll('.activity-swiper').forEach(function(el) {
+new Swiper(el, {
+    loop: true,
+    autoplay: { delay: 3500, disableOnInteraction: false },
+    pagination: { el: el.querySelector('.swiper-pagination'), clickable: true },
+    navigation: {
+    nextEl: el.querySelector('.swiper-button-next'),
+    prevEl: el.querySelector('.swiper-button-prev'),
+    },
+    effect: "coverflow",
+    coverflowEffect: {
+    rotate: 8,
+    stretch: 0,
+    depth: 70,
+    modifier: 2,
+    slideShadows: false,
+    },
+});
+});

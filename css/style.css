@@ -10953,3 +10953,112 @@ h6,
         padding-right: 0.5rem;
     }
 }
+
+
+/* ==== Activity Section ==== */
+.oscar-activities {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 4rem auto 4rem auto;
+    max-width: 1200px;
+}
+
+.activity-card {
+    background: linear-gradient(110deg, #fffbe8 75%, #ece6ff 100%);
+    border-radius: 2rem;
+    box-shadow: 0 8px 32px 0 rgba(90,80,170,0.13);
+    padding: 2.0rem 1.5rem 2.0rem 1.5rem;
+    margin: 0 auto;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.15s;
+}
+
+.activity-card:hover {
+    box-shadow: 0 12px 38px 0 rgba(120,80,170,0.18);
+    transform: translateY(-2px) scale(1.012);
+}
+
+.activity-header {
+    text-align: center;
+    align-self: center;
+    margin-bottom: 1.5rem;
+}
+
+.activity-title {
+    font-size: 2.0rem;
+    font-weight: 800;
+    color: #6347a6;
+    margin-bottom: 0.3em;
+    letter-spacing: 0.05em;
+}
+
+.activity-date {
+    font-size: 1.25rem;
+    color: #ba952f;
+    font-weight: 600;
+    margin-bottom: 0em;
+}
+
+.activity-desc {
+    font-size: 1.2rem;
+    color: #494a5d;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    align-self: flex-start;
+    width: 100%;
+    margin-bottom: 1.2rem;
+}
+
+.activity-photos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.activity-swiper {
+    width: 1000px;
+    height: 600px;
+    border-radius: 18px;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 1px 14px 0 rgba(80,110,200,0.10);
+}
+
+.activity-swiper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    transition: filter 0.13s;
+}
+
+.activity-swiper .swiper-pagination {
+    bottom: 10px !important;
+}
+
+
+.activity-swiper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    transition: filter 0.13s;
+}
+
+@media (max-width: 750px) {
+    .activity-card, .oscar-activities {
+        max-width: 98vw;
+        padding: 0 0.2em;
+    }
+    .activity-swiper {
+        width: 95vw;
+        max-width: 350px;
+        height: 180px;
+        border-radius: 13px;
+    }
+}
