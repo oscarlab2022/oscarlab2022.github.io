@@ -11283,11 +11283,12 @@ h6,
     font-size: 1.25rem;
     margin-top: 1.2rem;
     line-height: 1.5;
+    text-align: center;
 }
 
 @media (max-width: 600px) {
     .oscar-video-container { padding: 0 0.5em; }
-    .oscar-video-title { font-size: 1.5rem; }
-    .oscar-video-icon { font-size: 1.5rem; }
+    .oscar-video-title { font-size: 1.25rem; }
+    .oscar-video-icon { font-size: 1.25rem; }
     .oscar-video-desc { font-size: 1.0rem; }
 }
