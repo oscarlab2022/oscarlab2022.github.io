@@ -10336,14 +10336,6 @@ h6,
     font-size: .97rem;
 }
 
-/* Green chip (for social/media links or website) */
-.alumni-chip.green {
-    background: #e5fbe2;
-    color: #21a366;
-}
-.alumni-chip.green:hover {
-    background: #cdf5cb;
-}
 
 @media (max-width: 900px) {
     .alumni-list { padding-left: 16px; padding-right: 16px; }
@@ -10550,32 +10542,6 @@ h6,
     list-style: none;
 }
 
-.team-tags {
-    margin-top: 0.3rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: .5rem;
-}
-.team-chip {
-    display: inline-flex;
-    align-items: center;
-    gap: .35rem;
-    padding: .24rem .68rem;
-    background: #e5fbe2;
-    color: #21a366;
-    font-size: .87rem;
-    font-weight: 600;
-    border-radius: .6rem;
-    text-decoration: none;
-    transition: background .15s;
-    margin-bottom: .18rem;
-}
-.team-chip:hover {
-    background: #cdf5cb;
-}
-.team-chip i {
-    font-size: .97rem;
-}
 
 /* RWD */
 @media (max-width: 600px) {
@@ -11294,4 +11260,121 @@ h6,
         font-size: 1.0rem; 
         text-align: left;
     }
+}
+
+
+/* ==== Publication Section ==== */
+.pub-section {
+    margin-bottom: 3rem;
+}
+.pub-section h2 {
+    margin-bottom: 3rem;
+}
+h2#conference {
+    text-align: center;
+}
+h2#journal  {
+    text-align: center;
+}
+.pub-entry {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+}
+.pub-thumb img {
+    width: 350px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.pub-text {
+    flex: 1 1 0;
+    margin-left: 1.2rem;
+}
+.pub-title {
+    font-weight: 600;
+}
+.pub-links a {
+    font-size: 0.9rem;
+    text-decoration: underline;
+}
+/* --- Top‑Conference badge --- */
+.pub-badge {
+    display:inline-flex;
+    align-items:center;
+    margin-top:.4rem;
+    padding:.15rem .55rem;
+    background:#ffe08a;
+    color:#212529;
+    font-size:.8rem;
+    font-weight:600;
+    border-radius:.25rem
+}
+.pub-badge i {
+    margin-right:.35rem
+}
+
+@media (max-width: 576px) {
+    .pub-thumb img {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    .pub-text {
+        margin-left: 0;
+    }
+}
+
+
+
+
+
+ /* ===========================
+   Team Tags & Chips Section
+   Reusable tag design suitable for member tags, project tags, and more.
+   Example usage:
+   <div class="chip-tags">
+     <span class="chip chip-green"><i class="fa fa-user"></i>Member</span>
+     <span class="chip chip-purple"><i class="fa fa-cog"></i>Developer</span>
+   </div>
+   ===========================  */
+.chip-tags {
+    margin-top: 0.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.chip {
+    display: inline-flex;
+    align-items: center;
+    gap: .35rem;
+    padding: .25rem .7rem;
+    font-size: .85rem;
+    font-weight: 600;
+    border-radius: .5rem;
+    text-decoration: none;
+    transition: background .15s;
+    margin-bottom: .15rem;
+}
+
+.chip i {
+    font-size: 1.0rem;
+}
+
+.chip-green {
+    background: #e5fbe2;
+    color: #21a366;
+}
+.chip-green:hover {
+    background: #cdf5cb;
+}
+
+
+.chip-purple {
+    background: #f2efff;
+    color: #6b59ff;
+}
+
+.chip-purple:hover {
+    background: #e5deff;
 }

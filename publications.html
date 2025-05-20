@@ -23,99 +23,6 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    <style>
-        /* --- simple publication layout helpers --- */
-        .pub-section {
-            margin-bottom: 3rem;
-        }
-        .pub-section h2 {
-            margin-bottom: 3rem;
-        }
-        h2#conference {
-            text-align: center;
-        }
-        h2#journal  {
-            text-align: center;
-        }
-        .pub-entry {
-            display: flex;
-            flex-wrap: wrap;
-            margin-bottom: 2.5rem;
-        }
-        .pub-thumb img {
-            width: 350px;
-            height: auto;
-            object-fit: cover;
-            border-radius: 4px;
-        }
-        .pub-text {
-            flex: 1 1 0;
-            margin-left: 1.2rem;
-        }
-        .pub-title {
-            font-weight: 600;
-        }
-        .pub-links a {
-            font-size: 0.9rem;
-            text-decoration: underline;
-        }
-        /* --- Top‑Conference badge --- */
-        .pub-badge {
-            display:inline-flex;
-            align-items:center;
-            margin-top:.4rem;
-            padding:.15rem .55rem;
-            background:#ffe08a;
-            color:#212529;
-            font-size:.8rem;
-            font-weight:600;
-            border-radius:.25rem
-        }
-        .pub-badge i {
-            margin-right:.35rem
-        }
-
-
-        /* ===== "Chip" Style for Link Icons ===== */
-        .pub-icons{                     /* Container for the entire row */
-            margin-top:.6rem;
-            display:flex;
-            gap:.65rem;                 /* Spacing between each chip */
-        }
-
-        .pub-chip{                      /* Single chip */
-            display:inline-flex;
-            align-items:center;
-            gap:.35rem;                 /* Space between icon and text */
-            padding:.3rem .7rem;
-            background:#f2efff;       /* Light purple background */
-            color:#6b59ff;            /* Text and icon color */
-            font-size:.8rem;
-            font-weight:600;
-            border-radius:.6rem;
-            text-decoration:none;       /* Remove underline */
-            transition:background .15s;
-        }
-        .pub-chip:hover{
-            background:#e5deff;         /* Slightly darker on hover */
-            text-decoration:none;
-        }
-        .pub-chip i{
-            font-size:.9rem;             /* Icon slightly larger */
-        }
-
-
-
-        @media (max-width: 576px) {
-            .pub-thumb img {
-                width: 100%;
-                margin-bottom: 0.5rem;
-            }
-            .pub-text {
-                margin-left: 0;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -176,11 +83,11 @@
                         <p class="mb-1">Chun-Chien Liu, Chun-Feng Wu, and Yunho Jin</p>
                         <p class="mb-1"><em>ACM/IEEE Design Automation Conference (DAC)</em>, San Francisco, USA, Jun.&nbsp;22‑25, 2025.</p>
                         <p class="pub-badge"><i class="fas fa-award"></i>Top Conference — Acceptance Rate 23%</p>
-                        <p class="pub-icons">
-                            <a class="pub-chip" href="paper/dac25_upvss.pdf" target="_blank">
+                        <p class="chip-tags">
+                            <a class="chip chip-purple" href="paper/dac25_upvss.pdf" target="_blank">
                                 <i class="fas fa-file-pdf"></i><span>PDF</span>
                             </a>
-                            <a class="pub-chip" href="https://62dac.conference-program.com/presentation/?id=RESEARCH1048&sess=sess163" target="_blank">
+                            <a class="chip chip-purple" href="https://62dac.conference-program.com/presentation/?id=RESEARCH1048&sess=sess163" target="_blank">
                                 <i class="fas fa-external-link-alt"></i><span>Link</span>
                             </a>
                         </p>
@@ -193,11 +100,11 @@
                         <p class="mb-1">Wen-Tse Chang, Chun-Feng Wu, and Yun-Chen Lo</p>
                         <p class="mb-1"><em>ACM/IEEE Design Automation Conference (DAC)</em>, San Francisco, USA, Jun.&nbsp;22‑25, 2025.</p>
                         <p class="pub-badge"><i class="fas fa-award"></i>Top Conference — Acceptance Rate 23%</p>
-                        <p class="pub-icons">
-                            <a class="pub-chip" href="paper/dac25_pdac.pdf" target="_blank">
+                        <p class="chip-tags">
+                            <a class="chip chip-purple" href="paper/dac25_pdac.pdf" target="_blank">
                                 <i class="fas fa-file-pdf"></i><span>PDF</span>
                             </a>
-                            <a class="pub-chip" href="https://62dac.conference-program.com/presentation/?id=RESEARCH1293&sess=sess120" target="_blank">
+                            <a class="chip chip-purple" href="https://62dac.conference-program.com/presentation/?id=RESEARCH1293&sess=sess120" target="_blank">
                                 <i class="fas fa-external-link-alt"></i><span>Link</span>
                             </a>
                         </p>
@@ -215,11 +122,11 @@
                         <p class="mb-1">Che-Wei Lin and Chun-Feng Wu</p>
                         <p class="mb-1"><em>ACM/IEEE International Conference on Computer-Aided Design (ICCAD)</em>, New Jersey, USA, Oct.&nbsp;27‑31, 2024.</p>
                         <p class="pub-badge"><i class="fas fa-award"></i>Top Conference — Acceptance Rate 24%</p>
-                        <p class="pub-icons">
-                            <a class="pub-chip" href="paper/iccad24_alisa.pdf" target="_blank">
+                        <p class="chip-tags">
+                            <a class="chip chip-purple" href="paper/iccad24_alisa.pdf" target="_blank">
                                 <i class="fas fa-file-pdf"></i><span>PDF</span>
                             </a>
-                            <a class="pub-chip" href="https://dl.acm.org/doi/10.1145/3676536.3676677" target="_blank">
+                            <a class="chip chip-purple" href="https://dl.acm.org/doi/10.1145/3676536.3676677" target="_blank">
                                 <i class="fas fa-external-link-alt"></i><span>Link</span>
                             </a>
                         </p>
@@ -232,11 +139,11 @@
                         <p class="mb-1">Chun-Feng Wu, Yuan-Hao Chang, Ming-Chang Yang, and Tei-Wei Kuo</p>
                         <p class="mb-1"><em>ACM/IEEE Design Automation Conference (DAC)</em>, San Francisco, USA, Jun.&nbsp;23‑27, 2024.</p>
                         <p class="pub-badge"><i class="fas fa-award"></i>Top Conference — Acceptance Rate 23%</p>
-                        <p class="pub-icons">
-                            <a class="pub-chip" href="paper/dac24_cpu_idle.pdf" target="_blank">
+                        <p class="chip-tags">
+                            <a class="chip chip-purple" href="paper/dac24_cpu_idle.pdf" target="_blank">
                                 <i class="fas fa-file-pdf"></i><span>PDF</span>
                             </a>
-                            <a class="pub-chip" href="https://dl.acm.org/doi/abs/10.1145/3649329.3655929" target="_blank">
+                            <a class="chip chip-purple" href="https://dl.acm.org/doi/abs/10.1145/3649329.3655929" target="_blank">
                                 <i class="fas fa-external-link-alt"></i><span>Link</span>
                             </a>
                         </p>
@@ -254,11 +161,11 @@
                         <p class="mb-1">Yunho Jin, Chun-Feng Wu, David Brooks, and Gu-Yeon Wei</p>
                         <p class="mb-1"><em>Conference on Neural Information Processing Systems (NeurIPS)</em>, New Orleans, USA, Dec.&nbsp;10‑16, 2023.</p>
                         <p class="pub-badge"><i class="fas fa-award"></i>Top Conference — Acceptance Rate 26.1%</p>
-                        <p class="pub-icons">
-                            <a class="pub-chip" href="paper/neurips23_s3.pdf" target="_blank">
+                        <p class="chip-tags">
+                            <a class="chip chip-purple" href="paper/neurips23_s3.pdf" target="_blank">
                                 <i class="fas fa-file-pdf"></i><span>PDF</span>
                             </a>
-                            <a class="pub-chip" href="https://dl.acm.org/doi/10.5555/3666122.3666913" target="_blank">
+                            <a class="chip chip-purple" href="https://dl.acm.org/doi/10.5555/3666122.3666913" target="_blank">
                                 <i class="fas fa-external-link-alt"></i><span>Link</span>
                             </a>
                         </p>
@@ -276,11 +183,11 @@
                         <p class="mb-1">Wei Cheng, Chun-Feng Wu, Yuan-Hao Chang, and Ing-Chao Lin</p>
                         <p class="mb-1"><em>ACM/IEEE International Conference on Computer-Aided Design (ICCAD)</em>, San Diego, USA, Oct.&nbsp;30 – Nov.&nbsp;3, 2022.</p>
                         <p class="pub-badge"><i class="fas fa-award"></i>Top Conference — Acceptance Rate 22.5%</p>
-                        <p class="pub-icons">
-                            <a class="pub-chip" href="paper/iccad22_graphrc.pdf" target="_blank">
+                        <p class="chip-tags">
+                            <a class="chip chip-purple" href="paper/iccad22_graphrc.pdf" target="_blank">
                                 <i class="fas fa-file-pdf"></i><span>PDF</span>
                             </a>
-                            <a class="pub-chip" href="https://dl.acm.org/doi/10.1145/3508352.3549408" target="_blank">
+                            <a class="chip chip-purple" href="https://dl.acm.org/doi/10.1145/3508352.3549408" target="_blank">
                                 <i class="fas fa-external-link-alt"></i><span>Link</span>
                             </a>
                         </p>
@@ -306,11 +213,11 @@
                         <p class="pub-title">GEAR: Graph-Evolving Aware Data ArrangeR to Enhance the Performance of Traversing Evolving Graphs on SCM</p>
                         <p class="mb-1">Wen-Yi Wang, Chun-Feng Wu, Yun-Chih Chen, Tei-Wei Kuo, and Yuan-Hao Chang</p>
                         <p class="mb-1"><em>IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)</em>, vol.&nbsp;43, no.&nbsp;11, pp.&nbsp;3674‑3684, Nov.&nbsp;2024. (Integrated with ACM/IEEE CODES+ISSS'24)</p>
-                        <p class="pub-icons">
-                            <a class="pub-chip" href="paper/tcad24_gear.pdf" target="_blank">
+                        <p class="chip-tags">
+                            <a class="chip chip-purple" href="paper/tcad24_gear.pdf" target="_blank">
                                 <i class="fas fa-file-pdf"></i><span>PDF</span>
                             </a>
-                            <a class="pub-chip" href="https://ieeexplore.ieee.org/document/10745823" target="_blank">
+                            <a class="chip chip-purple" href="https://ieeexplore.ieee.org/document/10745823" target="_blank">
                                 <i class="fas fa-external-link-alt"></i><span>Link</span>
                             </a>
                         </p>
@@ -327,11 +234,11 @@
                         <p class="pub-title">Accelerating Random Forest on Memory-Constrained Devices through Data Storage Optimization</p>
                         <p class="mb-1">Camelia Slimani, Chun-Feng Wu, Stephane Rubini, Yuan-Hao Chang, and Jalil Boukhobza</p>
                         <p class="mb-1"><em>IEEE Transactions on Computers (TC)</em>, vol.&nbsp;72, no.&nbsp;6, pp.&nbsp;1595‑1609, Jun.&nbsp;2023</p>
-                        <p class="pub-icons">
-                            <a class="pub-chip" href="paper/tc23_rf.pdf" target="_blank">
+                        <p class="chip-tags">
+                            <a class="chip chip-purple" href="paper/tc23_rf.pdf" target="_blank">
                                 <i class="fas fa-file-pdf"></i><span>PDF</span>
                             </a>
-                            <a class="pub-chip" href="https://ieeexplore.ieee.org/document/9925082" target="_blank">
+                            <a class="chip chip-purple" href="https://ieeexplore.ieee.org/document/9925082" target="_blank">
                                 <i class="fas fa-external-link-alt"></i><span>Link</span>
                             </a>
                         </p>
@@ -343,11 +250,11 @@
                         <p class="pub-title">RTrap: Trapping and Containing Ransomware with Machine Learning</p>
                         <p class="mb-1">Gaddisa Olani Ganfure, Chun-Feng Wu, Yuan-Hao Chang, and Wei-Kuan Shih</p>
                         <p class="mb-1"><em>IEEE Transactions on Information Forensics and Security (TIFS)</em>, vol.&nbsp;18, pp.&nbsp;1433‑1448, Jan.&nbsp;2023</p>
-                        <p class="pub-icons">
-                            <a class="pub-chip" href="paper/tifs23_rtrap.pdf" target="_blank">
+                        <p class="chip-tags">
+                            <a class="chip chip-purple" href="paper/tifs23_rtrap.pdf" target="_blank">
                                 <i class="fas fa-file-pdf"></i><span>PDF</span>
                             </a>
-                            <a class="pub-chip" href="https://ieeexplore.ieee.org/document/10026355" target="_blank">
+                            <a class="chip chip-purple" href="https://ieeexplore.ieee.org/document/10026355" target="_blank">
                                 <i class="fas fa-external-link-alt"></i><span>Link</span>
                             </a>
                         </p>
@@ -364,11 +271,11 @@
                         <p class="pub-title">Exploring Synchronous Page Fault Handling</p>
                         <p class="mb-1">Yin-Chiuan Chen, Chun-Feng Wu, Yuan-Hao Chang, and Tei-Wei Kuo</p>
                         <p class="mb-1"><em>IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)</em>, vol.&nbsp;41, no.&nbsp;11, pp.&nbsp;3791‑3802, Nov.&nbsp;2022. (Integrated with ACM/IEEE CODES+ISSS'22)</p>
-                        <p class="pub-icons">
-                            <a class="pub-chip" href="paper/tcad22_syncpf.pdf" target="_blank">
+                        <p class="chip-tags">
+                            <a class="chip chip-purple" href="paper/tcad22_syncpf.pdf" target="_blank">
                                 <i class="fas fa-file-pdf"></i><span>PDF</span>
                             </a>
-                            <a class="pub-chip" href="https://ieeexplore.ieee.org/document/9925707" target="_blank">
+                            <a class="chip chip-purple" href="https://ieeexplore.ieee.org/document/9925707" target="_blank">
                                 <i class="fas fa-external-link-alt"></i><span>Link</span>
                             </a>
                         </p>
