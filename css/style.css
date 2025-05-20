@@ -10607,7 +10607,7 @@ h6,
     padding: 2.0rem 2.0rem 2.5rem 2.0rem; 
     max-width: 1300px;
     margin: 0 auto;
-    transition: box-shadow 0.14s, border-color 0.14s;
+    transition: box-shadow 0.15s, border-color 0.15s;
 }
 
 .director-entry:not(:last-child) {
@@ -10620,14 +10620,19 @@ h6,
 }
 
 .director-thumb img {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
+    width: 100%;
+    max-width: 320px;
+    max-height: 480px;
+    height: auto;
+    object-fit: contain; /* Changed from 'cover' to 'contain' to avoid cropping */
     border-radius: 20px;
-    border: 5px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #eee;
     background: #fff;
-    box-shadow: 0 2px 16px 0 rgba(120,120,170,0.13);
-    transition: border-color 0.14s, box-shadow 0.14s;
+    box-shadow: 0 2px 16px 0 rgba(120,120,170,0.15);
+    transition: border-color 0.15s, box-shadow 0.15s;
 }
 
 .director-entry:hover .director-thumb img {
@@ -10660,7 +10665,7 @@ h6,
     font-weight: 800;
     color: #223093;
     margin-left: 0px;
-    /* opacity: 0.82; */
+    /* opacity: 0.85; */
     letter-spacing: 0.01em;
 }
 
