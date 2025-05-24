@@ -10442,7 +10442,7 @@ h6,
 /* ==== Team Member Section ==== */
 .team-section {
     margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
+    padding-bottom: 2.0rem !important;
 }
 .team-list {
     display: grid;
